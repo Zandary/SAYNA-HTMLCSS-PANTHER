@@ -1,0 +1,386 @@
+html {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url("../Assets/Illustrations/Bathome1.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
+  width: 70%;
+  padding: 1vh 10% 0% 10%;
+}
+
+a {
+  all: unset;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav {
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionsContent {
+  height: 13%;
+}
+
+#hero {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#hero-content {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#hanging {
+  position: absolute;
+  top: 297%;
+  left: 65%;
+}
+
+#hero-content > p {
+  text-align: center;
+  width: 52%;
+}
+
+#btns-wrapper {
+  display: flex;
+  width: 70%;
+  height: 30%;
+  justify-content: space-evenly;
+}
+
+.button {
+  display: flex;
+  width: 40%;
+  height: 75%;
+  margin: 1%;
+  background: linear-gradient(0.25turn, #eddebf69, #19587d42);
+  justify-content: center;
+  align-items: center;
+  transition: background 0s;
+}
+
+.button:hover {
+  background: linear-gradient(0.25turn, #eddebf, #19587d);
+}
+
+#cinema > p,
+#nemesis > p,
+#allies > p {
+  margin: 0% 8% 5% 8%;
+}
+
+.zoom-image {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+.batmans {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.batmans .text-centered {
+  text-align: center !important;
+}
+
+.text-justified {
+  text-align: justify !important;
+}
+
+.carouselItem {
+  display: flex;
+  width: 30vw;
+  font-size: 12px;
+  align-items: center;
+  background-color: #252525;
+  border-radius: 10px;
+}
+
+.carouselItem > div {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+#multimedia > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Section Prenons contact */
+
+#newsletter {
+  background: linear-gradient(0.37turn, #4f4b41, #0b1f2b);
+  height: 90vh;
+}
+
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 90%;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+form > input[type="text"],
+form > input[type="email"] {
+  all: unset;
+  border-bottom: 1px gray solid;
+  width: 100%;
+}
+
+select > option {
+  background: linear-gradient(0.37turn, #4f4b41, #0b1f2b);
+}
+
+select {
+  border-bottom: 1px gray solid;
+  border-radius: 0px;
+}
+
+button[type="submit"] {
+  all: unset;
+  display: flex;
+  width: 35%;
+  height: 70%;
+  margin: 1%;
+  background: linear-gradient(0.25turn, #797773, #5a0e1a);
+  justify-content: center;
+  align-items: center;
+  transition: background 0s;
+}
+
+#submit-container {
+  margin-top: 5%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#radios {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Radio button styles */
+.btn {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 18%;
+  position: relative;
+}
+
+.btn label,
+.btn input {
+  display: block;
+}
+
+.btn input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.btn input[type="radio"]:checked + label {
+  background: linear-gradient(0.37turn, #7e7a70, #4f5355);
+}
+
+.btn input[type="radio"]:hover + label {
+  background: linear-gradient(0.37turn, #7e7a70, #4f5355);
+}
+
+.btn label {
+  display: flex;
+  height: 60%;
+  text-align: center;
+  margin: 1%;
+  cursor: pointer;
+  line-height: 1.8em;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      rgb(168, 167, 152),
+      rgb(116, 101, 124)
+    )
+    1;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+/* Citation styles */
+#citation {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.quote-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh; /* Adjust this value according to your needs */
+}
+
+.quote-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 30vh;
+  width: 49vw;
+}
+
+#texts {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.quote-container img:last-child {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  align-self: end;
+}
+
+/* Icones changeantes */
+#sayna {
+  background-image: url("./assets/logos/logo_sayna_white.png");
+}
+#x {
+  background-image: url("./assets/logos/icon_x.png");
+}
+#DC {
+  background-image: url("./assets/logos/icon_DC.png");
+}
+
+/* scroll control */
+#scroll-arrows {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 233px;
+  z-index: 9999;
+}
+
+#up-arrow,
+#down-arrow {
+  display: block;
+  /* width: 40px;
+  height: 40px; */
+  margin-bottom: 10px;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#up-arrow:hover,
+#down-arrow:hover {
+  opacity: 1;
+}
+
+.reseaux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reseaux > img {
+  margin: 15%;
+}
+
+#ba-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10% 0%;
+}
+
+iframe {
+  width: 75%;
+  box-shadow: none;
+  transition: box-shadow ease-in-out;
+}
+
+iframe:hover {
+  box-shadow: 0px 0px 20px 20px #313131;
+}
+
+/* Icons transitions */
+.yellowTransition {
+  filter: grayscale(100%);
+  transition: filter 0.1s;
+}
+
+.yellowTransition:hover {
+  filter: grayscale(0%);
+}
+
+footer {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > p {
+  display: flex;
+  align-items: center;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+}
+
+#icons {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.spaced {
+  margin: 10%;
+}
