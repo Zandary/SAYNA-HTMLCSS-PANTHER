@@ -1,0 +1,102 @@
+@import url(style.css);
+
+@font-face {
+  font-family: Panthera;
+  src: url("./assets/fonts/panthera.otf");
+}
+
+@font-face {
+  font-family: Beyno;
+  src: url("./assets/fonts/BEYNO.otf");
+}
+
+body {
+  font-family: "Cantarell", sans-serif;
+}
+
+#mainTitle {
+  font-family: "Panthera" !important;
+  font-size: 68px;
+  color: #9e91b7;
+}
+
+.beyno {
+  font-family: "Beyno" !important;
+  color: #9e91b7;
+}
+
+#subTitle {
+  font-size: 32px;
+}
+
+#hero-content > p,
+#hero-content > a {
+  width: 40%;
+  color: white;
+}
+
+#hero_desc {
+  display: flex !important;
+  align-items: flex-start;
+}
+
+#desc_text {
+  width: 150%;
+  margin: 0% 8%;
+}
+
+#desc_card {
+  background-color: white;
+  color: #3d2da6;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.detail_elems > div {
+  display: flex;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.tags > div {
+  background-color: #402ea5;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: 12px;
+}
+
+.title {
+}
+
+.content {
+  color: #07338c;
+  font-weight: bold;
+}
+
+#desc_text > p {
+  text-align: justify;
+}
+
+.details {
+  width: 80%;
+}
+
+#details > h3 {
+  width: 100%;
+  text-align: center !important;
+  color: black !important;
+}
+
+#footerlogo {
+  background-image: url("./assets/all_pages/footer1.png");
+}
+
+#footer_menu {
+}
